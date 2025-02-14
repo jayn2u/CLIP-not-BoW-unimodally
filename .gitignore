@@ -1,0 +1,10 @@
+datasets
+cache
+alignment/.DS_Store
+alignment/__pycache__
+probing/.DS_Store
+probing/__pycache__
+clevr_generation/__pycache__
+data_loading/__pycache__
+vision-language-models-are-bows-main
+.DS_Store
