@@ -1,0 +1,34 @@
+[project]
+name = "clip-not-bow-unimodally"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "clip @ git+https://github.com/openai/CLIP.git@d05afc436d78f1c48dc0dbf8e5980a9d471f35f6",
+    "cython==3.2.4",
+    "easydict==1.13",
+    "ftfy==6.3.1",
+    "gdown==5.2.1",
+    "matplotlib==3.10.8",
+    "nltk==3.9.4",
+    "numpy==1.26.4",
+    "pandas==2.3.3",
+    "pillow==12.1.1",
+    "pycocotools @ git+https://github.com/waleedka/coco.git@f83e9552d4ca57e15a16dca2efe3dcd80693358a#subdirectory=PythonAPI",
+    "pyyaml==6.0.3",
+    "regex==2026.3.32",
+    "scikit-learn==1.7.2",
+    "scipy==1.15.3",
+    "spacy==3.7.6",
+    "thinc==8.2.5",
+    "torch==2.11.0",
+    "torchaudio==2.11.0",
+    "torchvision==0.26.0",
+    "tqdm==4.67.3",
+    "transformers==5.4.0",
+    "wandb==0.25.1",
+]
+
+[tool.uv.extra-build-dependencies]
+pycocotools = ["Cython", "numpy"]
