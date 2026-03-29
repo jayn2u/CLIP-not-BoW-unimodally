@@ -19,10 +19,17 @@ This repository contains code for [CLIP behaves like a bag-of-words model cross-
    pip install -r requirements.txt
    ```
 
-3. We use code from *When and why vision-language models behave like bags-of-words, and what to do about it?* by Yuksekgonul et al. (2023). Clone `vision-language-models-are-bows` and place it inside this directory:
+3. We use code from *When and why vision-language models behave like bags-of-words, and what to do about it?* by Yuksekgonul et al. (2023). This repository includes `vision-language-models-are-bows` as a git submodule. Initialize it after cloning:
    
    ```bash
-   git clone https://github.com/mertyg/vision-language-models-are-bows.git
+   git submodule update --init --recursive
+   ```
+
+   If you are cloning this repository for the first time, you can fetch the main repository and the submodule together:
+
+   ```bash
+   git clone --recurse-submodules https://github.com/kdariina/CLIP-not-BoW-unimodally.git
+   cd CLIP-not-BoW-unimodally
    ```
 
 ## Repository structure
@@ -131,4 +138,3 @@ If you use this code or the PUG:SPARE dataset, please cite:
 ## Contact
 
 For questions and requests, please reach out to Darina at **darina51012@gmail.com**.
-

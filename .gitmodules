@@ -1,0 +1,3 @@
+[submodule "vision-language-models-are-bows"]
+	path = vision-language-models-are-bows
+	url = https://github.com/mertyg/vision-language-models-are-bows.git

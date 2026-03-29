@@ -15,7 +15,7 @@ import importlib.util
 import sys
 import os
 
-repo_path = "../vision-language-models-are-bows-main"
+repo_path = "../vision-language-models-are-bows"
 sys.path.append(repo_path)  # Add to Python path
 
 module_name = "dataset_zoo"  # The submodule to import
